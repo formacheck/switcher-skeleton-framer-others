@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
+
+// import '../App.css'
+import '../switcher.scss'
+// import '../index.css'
 
 
 const Home = () => {
@@ -20,6 +24,8 @@ const Home = () => {
 
     return (
         <div className={`App card ${colorTheme}`}>
+
+            <Navbar />
 
             <div className='theme-options'>
                 <div id='theme-white' onClick={() => handleTheme('theme-white')}
@@ -52,6 +58,8 @@ const Home = () => {
                 </p>
                 <p>-- formacheck --</p>
             </div>
+
+
 
         </div>
     )
